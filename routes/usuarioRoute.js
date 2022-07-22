@@ -9,7 +9,6 @@ const {
     usuarioGet,
     usuarioPost,
     usuarioPut,
-    usuarioPatch,
     usuarioDelete
 } = require('../controller/usuarioController');
 const {
@@ -40,7 +39,6 @@ router.put('/:id', [
     check('rol').custom(rolValido),
     validarCampos
 ], usuarioPut);
-router.patch('/', usuarioPatch);
 router.delete('/:id', [
     param('id').exists().isMongoId().withMessage('No es un ID valido').custom(validarId),
 ], usuarioDelete);

@@ -54,5 +54,5 @@ const usuarioDelete =async (req=request, res=response) => {
 }
 
 module.exports ={
-    usuarioGet, usuarioPost, usuarioPut, usuarioPatch, usuarioDelete
+    usuarioGet, usuarioPost, usuarioPut, usuarioDelete
 }
