@@ -21,7 +21,6 @@ const {
 const {
     validarCampos
 } = require('../middleware/validar_campos');
-const Usuario = require('../models/Usuario/usuario');
 const router = Router();
 
 router.get('/', usuarioGet);

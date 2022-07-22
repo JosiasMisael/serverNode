@@ -1,6 +1,5 @@
 const Usuario = require('../models/Usuario/usuario');
 const Rol = require('../models/Role/rol');
-const e = require('express');
 
 const correoExistente = async (correo) => {
     const emailExist = await Usuario.findOne({

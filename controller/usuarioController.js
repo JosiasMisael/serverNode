@@ -45,12 +45,6 @@ const usuarioPut =async(req=request, res=response) => {
     });
 }
 
-const usuarioPatch =(req=request, res=response) => {
-    res.json({
-      msg: 'API patch'
-    });
-}
-
 const usuarioDelete =async (req=request, res=response) => {
    const {id} =req.params;
 
